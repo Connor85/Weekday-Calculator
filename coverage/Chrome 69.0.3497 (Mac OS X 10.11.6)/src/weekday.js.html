@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/weekday.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> weekday.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">!function(e){var n={};function t(r){<span class="missing-if-branch" title="if path not taken" >I</span>if(n[r])<span class="cstat-no" title="statement not covered" >return n[r].exports;v</span>ar o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=e,t.c=n,t.d=<span class="fstat-no" title="function not covered" >function(e,n,r){<span class="cstat-no" title="statement not covered" ></span>t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})}</span>,t.r=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>Object.defineProperty(e,"__esModule",{value:!0})}</span>,t.n=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>var n=e&amp;&amp;e.__esModule?<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e.default}</span>:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e}</span>;<span class="cstat-no" title="statement not covered" >r</span>eturn t.d(n,"a",n),n}</span>,t.o=<span class="fstat-no" title="function not covered" >function(e,n){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(e,n)}</span>,t.p="/var/folders/zz/zyxvpxvq6csfxvn_n00000s4000069/T/_karma_webpack_/",t(t.s=11)}({11:function(module,exports,__webpack_require__){"use strict";eval('\n\nObject.defineProperty(exports, "__esModule", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }\n\nvar Weekday = exports.Weekday = function () {\n    function Weekday(day) {\n        _classCallCheck(this, Weekday);\n\n        this.day = day;\n        // this.year = year;\n    }\n\n    _createClass(Weekday, [{\n        key: "findDay",\n        value: function findDay() {\n            var newDate = new Date(this.day);\n            // console.log(newDate);\n            var weekdayArr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];\n            // console.log(weekdayArr[newDate.getDay()]);\n            return weekdayArr[newDate.getDay()];\n        }\n    }]);\n\n    return Weekday;\n}();\n\nvar WeekMonth = exports.WeekMonth = function () {\n    function WeekMonth(month) {\n        _classCallCheck(this, WeekMonth);\n\n        this.month = month;\n    }\n\n    _createClass(WeekMonth, [{\n        key: "findMonth",\n        value: function findMonth() {\n            var newMonth = new Date(this.month);\n            var monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];\n            // console.log(monthArr[newMonth.getMonth()]);\n            return monthArr[newMonth.getMonth()];\n        }\n    }]);\n\n    return WeekMonth;\n}();\n\nvar WeekYear = exports.WeekYear = function () {\n    function WeekYear(year) {\n        _classCallCheck(this, WeekYear);\n\n        this.year = year;\n    }\n\n    _createClass(WeekYear, [{\n        key: "findYear",\n        value: function findYear() {\n            var newWeekYear = new Date(this.year);\n            var newYear = newWeekYear.getFullYear();\n            return newYear;\n        }\n    }]);\n\n    return WeekYear;\n}();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvd2Vla2RheS5qcz8yY2Q5Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7SUFDSTtxQkFBWTtBQUNSOzthQUFLLE1BQ0w7QUFDSDtBQUNEOzs7O2tDQUNRO2dCQUFJLFVBQVUsSUFBSSxLQUFLLEtBQ3ZCO0FBQ0E7Z0JBQUksYUFBWSxDQUFDLFVBQVUsV0FBVyxhQUFhLFlBQVksVUFBVSxZQUN6RTtBQUNBO21CQUFPLFdBQVcsUUFDekI7QUFFRTs7Ozs7O0lBQ0g7dUJBQVk7QUFDWjs7YUFBSyxRQUNKO0FBQ0Q7Ozs7b0NBQ0k7Z0JBQUksV0FBVyxJQUFJLEtBQUssS0FDeEI7Z0JBQUksV0FBVyxDQUFDLFdBQVcsWUFBWSxTQUFTLFNBQVMsT0FBTyxRQUFRLFFBQVEsVUFBVSxhQUFhLFdBQVcsWUFDbEg7QUFDQTttQkFBTyxTQUFTLFNBQ25CO0FBR0U7Ozs7OztJQUNIO3NCQUFZO0FBQ1o7O2FBQUssT0FDSjtBQUNEOzs7O21DQUNJO2dCQUFJLGNBQWMsSUFBSSxLQUFLLEtBQzNCO2dCQUFJLFVBQVUsWUFDZDttQkFDSDtBQVJpQiIsImZpbGUiOiIxMS5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBXZWVrZGF5IHtcbiAgICBjb25zdHJ1Y3RvcihkYXkpe1xuICAgICAgICB0aGlzLmRheSA9IGRheTtcbiAgICAgICAgLy8gdGhpcy55ZWFyID0geWVhcjtcbiAgICB9XG4gICAgZmluZERheSgpe1xuICAgICAgICAgICAgbGV0IG5ld0RhdGUgPSBuZXcgRGF0ZSh0aGlzLmRheSk7XG4gICAgICAgICAgICAvLyBjb25zb2xlLmxvZyhuZXdEYXRlKTtcbiAgICAgICAgICAgIGxldCB3ZWVrZGF5QXJyID1bXCJNb25kYXlcIiwgXCJUdWVzZGF5XCIsIFwiV2VkbmVzZGF5XCIsIFwiVGh1cnNkYXlcIiwgXCJGcmlkYXlcIiwgXCJTYXR1cmRheVwiLCBcIlN1bmRheVwiXTtcbiAgICAgICAgICAgIC8vIGNvbnNvbGUubG9nKHdlZWtkYXlBcnJbbmV3RGF0ZS5nZXREYXkoKV0pO1xuICAgICAgICAgICAgcmV0dXJuIHdlZWtkYXlBcnJbbmV3RGF0ZS5nZXREYXkoKV07XG4gICAgfVxufVxuZXhwb3J0IGNsYXNzIFdlZWtNb250aCB7XG4gICAgY29uc3RydWN0b3IobW9udGgpIHtcbiAgICB0aGlzLm1vbnRoID0gbW9udGg7XG4gICAgfVxuICAgIGZpbmRNb250aCgpe1xuICAgICAgICBsZXQgbmV3TW9udGggPSBuZXcgRGF0ZSh0aGlzLm1vbnRoKTtcbiAgICAgICAgbGV0IG1vbnRoQXJyID0gW1wiSmFudWFyeVwiLCBcIkZlYnJ1YXJ5XCIsIFwiTWFyY2hcIiwgXCJBcHJpbFwiLCBcIk1heVwiLCBcIkp1bmVcIiwgXCJKdWx5XCIsIFwiQXVndXN0XCIsIFwiU2VwdGVtYmVyXCIsIFwiT2N0b2JlclwiLCBcIk5vdmVtYmVyXCIsIFwiRGVjZW1iZXJcIl07XG4gICAgICAgIC8vIGNvbnNvbGUubG9nKG1vbnRoQXJyW25ld01vbnRoLmdldE1vbnRoKCldKTtcbiAgICAgICAgcmV0dXJuIG1vbnRoQXJyW25ld01vbnRoLmdldE1vbnRoKCldO1xuICAgIH1cbn1cblxuZXhwb3J0IGNsYXNzIFdlZWtZZWFyIHtcbiAgICBjb25zdHJ1Y3Rvcih5ZWFyKSB7XG4gICAgdGhpcy55ZWFyID0geWVhcjtcbiAgICB9XG4gICAgZmluZFllYXIoKXtcbiAgICAgICAgbGV0IG5ld1dlZWtZZWFyID0gbmV3IERhdGUodGhpcy55ZWFyKTtcbiAgICAgICAgbGV0IG5ld1llYXIgPSBuZXdXZWVrWWVhci5nZXRGdWxsWWVhcigpO1xuICAgICAgICByZXR1cm4gbmV3WWVhcjtcbiAgICB9XG59XG5cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///11\n')}});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Oct 10 2018 16:49:21 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

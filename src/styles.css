@@ -1,0 +1,10 @@
+button{
+  color: blue;
+  background-color: rgb(218, 146, 12);
+}
+body{
+  background-color: aliceblue;
+}
+#jumbo{
+  background-image: linear-gradient(to bottom right, rgb(126, 6, 6), yellow);
+}
