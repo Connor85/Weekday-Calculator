@@ -33,7 +33,7 @@ export class WeekYear {
         return newYear;
     }
 
-    leapYear(){
+    findLeapYear(){
         let newLeapYear = new Date(this.year);
         let newYear = newLeapYear.getFullYear();
         if ((newYear % 400 === 0) || (newYear % 4 === 0) && (newYear % 100 != 0)){

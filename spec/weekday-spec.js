@@ -16,4 +16,8 @@ describe('Weekday', function(){
     var testWeekYear = new WeekYear ("10-2018");
     expect(testWeekYear.findYear()).not.toEqual("10-2018")
   })
+  it('return a true or false is the selected year is a leapyear', function(){
+    var testLeapYear = new WeekYear ("02-2000");
+    expect(testLeapYear.findLeapYear()).not.toEqual("02-2000")
+  })
 });

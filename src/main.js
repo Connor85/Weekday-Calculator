@@ -20,7 +20,7 @@ $(document).ready(function() {
         $("#resultDay").text(newWeekDay.findDay());
         $("#resultMonth").text(newWeekMonth.findMonth());
         $("#resultYear").text(newWeekYear.findYear());
-        $("#resultLeapYear").text(newLeapYear.leapYear());
+        $("#resultLeapYear").text(newLeapYear.findLeapYear());
         console.log(newLeapYear.leapYear());
     });
 });
